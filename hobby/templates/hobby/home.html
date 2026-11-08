@@ -1,0 +1,28 @@
+{% extends "hobby/base.html" %}
+
+{% block content %}
+
+<section>
+    <h2>Moje hobby: {{ hobby_name }}</h2>
+
+    <p>{{ description }}</p>
+
+    <div class="card-container">
+        <article class="card">
+            <h3>Python</h3>
+            <p>Język programowania wykorzystywany do tworzenia aplikacji.</p>
+        </article>
+
+        <article class="card">
+            <h3>Django</h3>
+            <p>Framework umożliwiający tworzenie stron internetowych.</p>
+        </article>
+
+        <article class="card">
+            <h3>HTML i CSS</h3>
+            <p>Technologie odpowiedzialne za strukturę i wygląd stron.</p>
+        </article>
+    </div>
+</section>
+
+{% endblock %}
